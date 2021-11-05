@@ -144,7 +144,7 @@
             // pictureBox1
             // 
             this.pictureBox1.ImageLocation = "https://i.gifer.com/Wo8a.gif";
-            this.pictureBox1.Location = new System.Drawing.Point(48, 431);
+            this.pictureBox1.Location = new System.Drawing.Point(54, 447);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(394, 246);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
