@@ -59,7 +59,7 @@ namespace Cpanel
                 listBox1.DataSource = myDataAccess.FilterPeople(new PersonModel() { Name =textBox3.Text});
                 listBox1.DisplayMember = "Path";
                 label3.Text = String.Format("Itemcount : {0}", listBox1.Items.Count);
-
+                 label3.Text = String.Format("Itemcount : {0}", listBox1.Items.Count);
             }
         }
     }
