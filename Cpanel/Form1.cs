@@ -67,7 +67,7 @@ namespace Cpanel
          void Image()
         {
             PictureBox pc = new PictureBox();
-            pc.Size = new Size(48, 431);
+            pc.Size = new Size(431, 48);
             pc.ImageLocation = "https://i.gifer.com/Wo8a.gif";
             pc.Location = new Point(48, 431);
             this.Controls.Add(pc);
