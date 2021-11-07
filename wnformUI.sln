@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31815.197
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "myDatbasePrj", "myDatbasePrj\myDatbasePrj.sqlproj", "{205E1369-1D0B-4D22-A402-93FD3E3D174E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cpanel", "Cpanel\Cpanel.csproj", "{F665DF31-BB51-41AF-A666-6B4CF001F7A4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Images", "Images\Images.csproj", "{1198571F-FE31-4D49-9588-A65F63759C06}"
@@ -17,18 +15,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestIQ", "TestIQ\TestIQ.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateRandomPerson", "GenerateRandomPerson\GenerateRandomPerson.csproj", "{8249DAB6-E178-4C8C-94CF-358A19D17CE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList", "TodoList\TodoList.csproj", "{4C8E664E-D9BD-4A72-B003-64FFAD1F524F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{205E1369-1D0B-4D22-A402-93FD3E3D174E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{205E1369-1D0B-4D22-A402-93FD3E3D174E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{205E1369-1D0B-4D22-A402-93FD3E3D174E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{205E1369-1D0B-4D22-A402-93FD3E3D174E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{205E1369-1D0B-4D22-A402-93FD3E3D174E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{205E1369-1D0B-4D22-A402-93FD3E3D174E}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{F665DF31-BB51-41AF-A666-6B4CF001F7A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F665DF31-BB51-41AF-A666-6B4CF001F7A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F665DF31-BB51-41AF-A666-6B4CF001F7A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -53,6 +47,10 @@ Global
 		{8249DAB6-E178-4C8C-94CF-358A19D17CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8249DAB6-E178-4C8C-94CF-358A19D17CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8249DAB6-E178-4C8C-94CF-358A19D17CE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C8E664E-D9BD-4A72-B003-64FFAD1F524F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C8E664E-D9BD-4A72-B003-64FFAD1F524F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C8E664E-D9BD-4A72-B003-64FFAD1F524F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C8E664E-D9BD-4A72-B003-64FFAD1F524F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
