@@ -16,9 +16,7 @@ namespace Cpanel
         public Form1()
         {
             InitializeComponent();
-            Image();
             update();
-            Image();
         }
         void update()
         {

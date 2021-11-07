@@ -1,0 +1,95 @@
+﻿<UserControl x:Class="GenerateRandomPerson.Controls.AnimeDetailControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GenerateRandomPerson.Controls"
+             mc:Ignorable="d" 
+             FontFamily="Dosis"
+             d:DesignHeight="800" d:DesignWidth="1100">
+    <Grid Background="#0c0c17">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Image Source="/Images/delete_sign_48px.png"
+               HorizontalAlignment="Right"
+               MouseDown="Image_MouseDown"
+               Grid.Column="1"></Image>
+
+        <TextBlock Text="AnimeName"
+                   Foreground="Red"
+                   FontSize="20"
+                   x:Name="animeTitle"
+                   VerticalAlignment="Center"
+                   >
+            
+        </TextBlock>
+        
+        <Image Stretch="Uniform" x:Name="animeImg" Grid.Row="1"
+               Margin="0 20 0 0"></Image>
+
+
+        <StackPanel Grid.Row="1" Grid.Column="1" >
+            <TextBlock  Padding="10" TextWrapping="Wrap">
+                <Run Text="Anime Link : " Foreground="White" ></Run>
+                <Run Text="(none)" Foreground="Red" x:Name="animeUrl"/>
+            </TextBlock>
+            
+            <!--Is airing-->
+            <TextBlock  Padding="10">
+                <Run Text="Aring : " Foreground="White" />
+                <Run Text="(none)" Foreground="Red" x:Name="animeAiring"/>
+            </TextBlock>
+
+            <!--Type-->
+            <TextBlock  Padding="10">
+                <Run Text="Type : " Foreground="White" />
+                <Run Text="(none)" Foreground="Red" x:Name="animeType"/>
+            </TextBlock>
+
+            <!--Episode-->
+            <TextBlock  Padding="10">
+                <Run Text="Episodes : " Foreground="White" />
+                <Run Text="(none)" Foreground="Red" x:Name="animeEpisode"/>
+            </TextBlock>
+
+            <!--Sore-->
+            <TextBlock  Padding="10">
+                <Run Text="Score : " Foreground="White" />
+                <Run Text="(none)" Foreground="Red" x:Name="animeScore"/>
+            </TextBlock>
+
+            <!--Start date-->
+            <TextBlock  Padding="10">
+                <Run Text="Start Date : " Foreground="White" />
+                <Run Text="(none)" Foreground="Red" x:Name="animeStart"/>
+            </TextBlock>
+
+            <!--end date-->
+            <TextBlock  Padding="10">
+                <Run Text="End Date : " Foreground="White" />
+                <Run Text="(none)" Foreground="Red" x:Name="animeEnd"/>
+            </TextBlock>
+
+
+            <!--Members-->
+            <TextBlock  Padding="10">
+                <Run Text="Members : " Foreground="White" />
+                <Run Text="(none)" Foreground="Red" x:Name="animeMember"/>
+            </TextBlock>
+            <!--Rated-->
+            <TextBlock  Padding="10">
+                <Run Text="Rated : " Foreground="White" />
+                <Run Text="(none)" Foreground="Red" x:Name="animeRated"/>
+            </TextBlock>
+            
+        </StackPanel>
+    </Grid>
+</UserControl>
