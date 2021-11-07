@@ -17,7 +17,6 @@ namespace Cpanel
         {
             InitializeComponent();
             update();
-            Image();
         }
         void update()
         {
@@ -62,16 +61,6 @@ namespace Cpanel
                 label3.Text = String.Format("Itemcount : {0}", listBox1.Items.Count);
                  label3.Text = String.Format("Itemcount : {0}", listBox1.Items.Count);
             }
-        }
-        
-         void Image()
-        {
-            PictureBox pc = new PictureBox();
-            pc.Size = new Size(431, 48);
-            pc.ImageLocation = "https://i.gifer.com/Wo8a.gif";
-            pc.Location = new Point(48, 431);
-            this.Controls.Add(pc);
-
         }
     }
 }

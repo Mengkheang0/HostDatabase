@@ -1,0 +1,144 @@
+﻿<Page x:Class="TestIQ.ListView.SigninView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestIQ.ListView"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      FontSize="16"
+      FontFamily="Dosis"
+      Title="SigninView">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition Height="130"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Message Text"
+                   Grid.Row="2"
+                   x:Name="msgTb"
+                   HorizontalAlignment="Center"
+                   Foreground="Red"
+                   
+                   TextWrapping="Wrap"
+                   Grid.Column="1"
+                   Visibility="Hidden"
+                           Padding="0 0 10 0"
+                           VerticalAlignment="Center">
+            
+        </TextBlock>
+        
+        
+        <TextBlock Grid.Column="1" 
+                   Text="Sign in"
+                   FontWeight="Bold"
+                   FontSize="23"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+        
+        <StackPanel Grid.Row="1"
+                    Grid.ColumnSpan="3">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="UserName"
+                           Padding="0 0 10 0"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center">
+                    
+                </TextBlock>
+                <TextBox Grid.Column="1"
+                         Width="300"
+                         x:Name="userNameTb"
+                         Background="Transparent"
+                         Height="30"
+                         Margin="10 0 0 0"
+                         Padding="6 4"
+                         HorizontalAlignment="Left">
+                    
+                </TextBox>
+                
+                <TextBlock Text="Password"
+                           Grid.Row="1"
+                           Padding="0 0 10 0"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center">
+
+                </TextBlock>
+                <TextBox Grid.Column="1"
+                         Background="Transparent"
+                         Grid.Row="1"
+                         Width="300"
+                         x:Name="passwordTb"
+                         Padding="6 4"
+                         Height="30"
+                         Margin="10 0 0 0"
+                         HorizontalAlignment="Left">
+
+                </TextBox>
+                <TextBlock Text="Roles"
+                           Grid.Row="2"
+                           Padding="0 0 10 0"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center">
+
+                </TextBlock>
+                <ComboBox Grid.Column="2"
+                          Grid.Row="2"
+                          Height="30"
+                         x:Name="roleCb"
+                          Width="250"
+                          HorizontalAlignment="Left"
+                          Margin="10 0 0 0">
+                    <ComboBoxItem>Teacher</ComboBoxItem>
+                    <ComboBoxItem>Student</ComboBoxItem>
+                </ComboBox>
+
+            </Grid>
+            
+            
+        </StackPanel>
+        <Button Grid.Row="2"
+                Grid.Column="1"
+                Width="120"
+                Height="30"
+                x:Name="signinBtn"
+                Click="signinBtn_Click"
+                Content="Sign in"
+                VerticalAlignment="Top">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Cursor" Value="Hand"></Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+        </Button>
+      
+        
+        
+    </Grid>
+</Page>

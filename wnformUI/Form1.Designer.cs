@@ -84,7 +84,7 @@
             this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(85, 325);
+            this.listBox1.Location = new System.Drawing.Point(85, 348);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(364, 404);
             this.listBox1.TabIndex = 3;
